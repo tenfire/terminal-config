@@ -24,6 +24,10 @@
           "style": "diamond",
           "foreground": "#ffffff",
           "background": "#c386f1",
+          "background_templates": [
+            "{{ if .SSHSession }}#b121dd{{ end }}"
+
+          ],
           "trailing_diamond": "",
           "template": "<parentBackground></> {{ if .SSHSession }} {{ end }}{{ .HostName }} "
         },
