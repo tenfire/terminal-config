@@ -15,3 +15,9 @@ Install posh theme for a single user:
 ```bash
 install-posh-theme.sh
 ```
+
+Use these settings for vscode
+```
+"editor.fontFamily": "CaskaydiaCove NF, CaskaydiaCove NFM, Cascadia Code, Consolas, 'Courier New', monospace",
+"terminal.integrated.fontFamily": ""
+```
