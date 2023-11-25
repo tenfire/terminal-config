@@ -281,7 +281,7 @@
             "{{if eq .PWD \"~\"}}#002589{{end}}",
             "{{if eq .PWD \"/\"}}#ff479c{{end}}"
           ],
-          "template": " {{ .Path }} ❯",
+          "template": " {{ path .Path .Location }} ❯",
           "properties": {
             "folder_separator_icon": "  ",
             "home_icon": "",
