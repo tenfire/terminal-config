@@ -247,12 +247,36 @@
           }
         },
         {
+          "type": "text",
+          "style": "powerline",
+          "foreground": "#FFFFFF",
+          "background": "transparent",
+          "invert_powerline": true,
+          "powerline_symbol": "",
+          "template": "<parentBackground></>"
+        },
+        {
+          "type": "owm",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "",
+          "foreground": "#D6DEEB",
+          "background": "#575656",
+          "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})",
+          "properties": {
+            "api_key": "API_KEY",
+            "location": "LOCATION",
+            "units": "metric",
+            "cache_timeout": 10,
+            "http_timeout": 300
+          }
+        },
+        {
           "type": "time",
           "style": "diamond",
           "invert_powerline": true,
           "foreground": "#111111",
           "background": "#2e9599",
-          "leading_diamond": "",
           "trailing_diamond": "",
           "template": " {{ .CurrentDate | date .Format }} "
         }
