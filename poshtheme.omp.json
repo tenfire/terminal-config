@@ -289,7 +289,7 @@
           "template": " {{ path .Path .Location }} ❯",
           "properties": {
             "folder_separator_icon": "  ",
-            "home_icon": "",
+            "home_icon": " ",
             "style": "mixed"
           }
         }
