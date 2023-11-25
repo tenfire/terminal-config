@@ -15,9 +15,8 @@
           "leading_diamond": "",
           "foreground": "#26C6DA",
           "background": "#144b64",
-          "background_templates": [
-            "{{ if .SSHSession }}#b121dd{{ end }}"
-
+          "foreground_templates": [
+            "{{ if .SSHSession }}#e16ae6{{ end }}"
           ],
           "template": " {{ if .SSHSession }} {{ end }}{{ .HostName }}"
         },
