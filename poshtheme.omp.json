@@ -9,27 +9,28 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "os",
-          "style": "diamond",
-          "leading_diamond": "",
-          "foreground": "#26C6DA",
-          "background": "#144b64",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "properties": {
-            "macos": "mac"
-          }
-        },
-        {
           "type": "session",
           "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#c386f1",
+          "style": "diamond",
+          "leading_diamond": "",
+          "foreground": "#26C6DA",
+          "background": "#144b64",
           "background_templates": [
             "{{ if .SSHSession }}#b121dd{{ end }}"
 
           ],
+          "template": " {{ if .SSHSession }} {{ end }}{{ .HostName }}"
+        },
+        {
+          "type": "os",
+          "style": "diamond",
+          "foreground": "#FFFFF",
+          "background": "#144b64",
           "trailing_diamond": "",
-          "template": "<parentBackground></> {{ if .SSHSession }} {{ end }}{{ .HostName }} "
+          "template": " {{.Icon}} ",
+          "properties": {
+            "macos": "mac"
+          }
         },
         {
           "type": "git",
@@ -287,15 +288,15 @@
       "newline": true,
       "segments": [
         {
-          "background": "#205b63",
-          "foreground": "#ffffff",
+          "foreground": "#26C6DA",
+          "background": "#144b64",
           "foreground_templates":  [
             "{{if .Root}}#FF0000{{end}}"
           ],
           "background_templates":  [
             "{{if .Root}}#ffdb0c{{end}}"
           ],
-          "leading_diamond": "",
+          "leading_diamond": "",
           "style": "diamond",
           "template": " {{if .Root}} {{end}}{{ .UserName }} ",
           "type": "text"
