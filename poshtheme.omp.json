@@ -273,15 +273,16 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#ffffff",
-          "background": "#ff479c",
+          "background": "#00897b",
           "background_templates": [
-            "{{if eq .PWD \"~\"}}#00897b{{end}}"
+            "{{if eq .PWD \"~\"}}#002589{{end}}",
+            "{{if eq .PWD \"/\"}}#ff479c{{end}}"
           ],
           "template": " {{ .Path }} ❯",
           "properties": {
-            "folder_separator_icon": " \ue0b1 ",
+            "folder_separator_icon": "  ",
             "home_icon": "",
-            "style": "folder"
+            "style": "mixed"
           }
         }
       ],
