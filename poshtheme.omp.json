@@ -233,6 +233,9 @@
           "powerline_symbol": "",
           "foreground": "#ffffff",
           "background": "#8f43f3",
+          "background_templates": [
+            "{{if gt .PhysicalPercentUsed 80}}#940031{{end}}"
+          ],
           "template": "  {{ round .PhysicalPercentUsed 0 }}% {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB ",
           "properties": {
             "precision": 2
