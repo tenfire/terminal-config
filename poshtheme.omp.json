@@ -264,7 +264,7 @@
             "api_key": "API_KEY",
             "location": "LOCATION",
             "units": "metric",
-            "cache_timeout": 10,
+            "cache_timeout": 0,
             "http_timeout": 300
           }
         },
