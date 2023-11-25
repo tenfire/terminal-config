@@ -306,9 +306,8 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#ffffff",
-          "background": "#00897b",
+          "background": "#2ca3da",
           "background_templates": [
-            "{{if eq .PWD \"~\"}}#002589{{end}}",
             "{{if eq .PWD \"/\"}}#ff479c{{end}}"
           ],
           "template": " {{ path .Path .Location }} ❯",
