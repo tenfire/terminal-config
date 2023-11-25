@@ -137,6 +137,12 @@
           }
         },
         {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FFFFFF",
+          "template": "<parentBackground></>"
+        },
+        {
           "type": "executiontime",
           "style": "plain",
           "foreground": "#ffffff",
@@ -144,8 +150,7 @@
           "template": "<transparent></>  {{ .FormattedMs }} ",
           "properties": {
             "threshold": 500,
-            "style": "austin",
-            "always_enabled": true
+            "style": "austin"
           }
         },
         {
