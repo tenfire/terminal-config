@@ -4,7 +4,8 @@
   "final_space": false,
   "console_title_template": "{{if .Root}}root@{{end}}{{ .HostName }} ➜ {{ .Folder }}",
   "var": {
-    "WeatherURL": "<WEATHER_URL>"
+    "WeatherURL": "<WEATHER_URL>",
+    "CalendarURL": "https://calendar.google.com/calendar/u/0/r"
   },
   "blocks": [
     {
@@ -278,7 +279,7 @@
           "foreground": "#111111",
           "background": "#2e9599",
           "trailing_diamond": "",
-          "template": " {{ .CurrentDate | date .Format }} "
+          "template": "{{ $TimeText := .CurrentDate | date .Format }} {{ url $TimeText .Var.CalendarURL }} "
         }
       ]
     },
