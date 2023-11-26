@@ -3,6 +3,9 @@
   "version": 2,
   "final_space": false,
   "console_title_template": "{{if .Root}}root@{{end}}{{ .HostName }} ➜ {{ .Folder }}",
+  "var": {
+    "WeatherURL": "<WEATHER_URL>"
+  },
   "blocks": [
     {
       "type": "prompt",
@@ -259,7 +262,7 @@
           "powerline_symbol": "",
           "foreground": "#D6DEEB",
           "background": "#575656",
-          "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})",
+          "template": "{{ $WeatherText := cat .Weather \"<SPACE>\" \"(\" .Temperature .UnitIcon \")\" | replace \" \" \"\" | replace \"<SPACE>\" \" \" }} {{ url $WeatherText .Var.WeatherURL }} ",
           "properties": {
             "api_key": "API_KEY",
             "location": "LOCATION",
