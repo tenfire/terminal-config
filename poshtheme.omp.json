@@ -269,7 +269,7 @@
             "location": "<WEATHER_LOCATION>",
             "units": "metric",
             "cache_timeout": 0,
-            "http_timeout": 100
+            "http_timeout": 200
           }
         },
         {
