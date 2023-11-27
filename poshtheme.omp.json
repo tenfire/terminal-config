@@ -310,10 +310,10 @@
           "background_templates": [
             "{{if eq .PWD \"/\"}}#ff479c{{end}}"
           ],
-          "template": " {{ path .Path .Location }} ❯",
+          "template": "   {{ path .Path .Location }} ❯",
           "properties": {
             "folder_separator_icon": "  ",
-            "home_icon": " ",
+            "home_icon": "~",
             "style": "mixed"
           }
         }
