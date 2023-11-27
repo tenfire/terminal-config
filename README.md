@@ -8,7 +8,8 @@ Install nerd font
 
 ```bash
 oh-my-posh font install
-# I'm using CascadiaCode
+# or
+oh-my-posh font install CascadiaCode
 ```
 
 Install posh theme for a single user:
