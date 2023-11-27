@@ -19,7 +19,7 @@
           "leading_diamond": "",
           "foreground": "#26C6DA",
           "background": "#144b64",
-          "template": " {{ if .SSHSession }} {{ end }}{{ .HostName }}"
+          "template": " {{ if .SSHSession }}󰢹 {{ else }}󰍹 {{ end }}{{ .HostName }}"
         },
         {
           "type": "os",
@@ -298,7 +298,7 @@
           ],
           "leading_diamond": "",
           "style": "diamond",
-          "template": " {{if .Root}} {{end}}{{ .UserName }} ",
+          "template": " {{if .Root}} {{else}} {{end}}{{ .UserName }} ",
           "type": "text"
         },
         {
