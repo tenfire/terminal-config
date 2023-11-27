@@ -196,25 +196,6 @@
           }
         },
         {
-          "type": "battery",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "invert_powerline": true,
-          "foreground": "#ffffff",
-          "background": "#f36943",
-          "background_templates": [
-            "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
-            "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
-            "{{if eq \"Full\" .State.String}}#4caf50{{end}}"
-          ],
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} ",
-          "properties": {
-            "discharging_icon": " ",
-            "charging_icon": " ",
-            "charged_icon": " "
-          }
-        },
-        {
           "type": "kubectl",
           "style": "powerline",
           "invert_powerline": true,
@@ -245,6 +226,25 @@
           "template": "  {{ round .PhysicalPercentUsed 0 }}% {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB ",
           "properties": {
             "precision": 2
+          }
+        },
+        {
+          "type": "battery",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "invert_powerline": true,
+          "foreground": "#ffffff",
+          "background": "#f36943",
+          "background_templates": [
+            "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
+            "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
+            "{{if eq \"Full\" .State.String}}#4caf50{{end}}"
+          ],
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} ",
+          "properties": {
+            "discharging_icon": " ",
+            "charging_icon": " ",
+            "charged_icon": " "
           }
         },
         {
