@@ -5,4 +5,3 @@ then
   apt update
   apt install zsh -y
 fi
-chsh -s $(which zsh)
