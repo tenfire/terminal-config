@@ -320,16 +320,5 @@
       ],
       "type": "prompt"
     }
-  ],
-  "transient_prompt": {
-      "background": "#144b64",
-      "foreground": "#26C6DA",
-      "foreground_templates":  [
-        "{{if .Root}}#FF0000{{end}}"
-      ],
-      "background_templates":  [
-        "{{if .Root}}#ffdb0c{{end}}"
-      ],
-      "template": "{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }} | {{ .UserName }}@{{ .HostName }} | {{ path .Segments.Path.Path .Segments.Path.Location }} ❯"
-  }
+  ]
 }
