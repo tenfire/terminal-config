@@ -189,6 +189,15 @@
           "template": "  {{ .Name }} "
         },
         {
+          "type": "text",
+          "style": "powerline",
+          "foreground": "#FFFFFF",
+          "background": "transparent",
+          "invert_powerline": true,
+          "powerline_symbol": "",
+          "template": "<parentBackground></>"
+        },
+        {
           "type": "spotify",
           "style": "powerline",
           "invert_powerline": true,
