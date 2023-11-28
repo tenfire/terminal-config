@@ -177,10 +177,16 @@
       "segments": [
         {
           "type": "shell",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#0077c2",
-          "template": "<#0077c2,transparent></>  {{ .Name }} <transparent,#0077c2></>"
+          "background": "#019e9e",
+          "background_templates": [
+            "{{if eq \"bash\" .Name}}#0077c2{{end}}",
+            "{{if eq \"fish\" .Name}}#8500c2{{end}}",
+            "{{if eq \"zsh\" .Name}}#9e8601{{end}}"
+          ],
+          "leading_diamond": "",
+          "template": "  {{ .Name }} "
         },
         {
           "type": "spotify",
