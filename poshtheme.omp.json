@@ -293,7 +293,7 @@
           "invert_powerline": true,
           "foreground": "#111111",
           "background": "#2e9599",
-          "trailing_diamond": "",
+          "trailing_diamond": " ",
           "template": "{{ $TimeText := .CurrentDate | date .Format }} {{ url $TimeText .Var.CalendarURL }} "
         }
       ]
