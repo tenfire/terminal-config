@@ -1,9 +1,12 @@
 #!/bin/bash
 
 THEME_FILE=~/poshtheme.omp.json
-FISH_CONFIG_FILE=~/.config/fish/config.fish
-FISH_INTERACTIVE_FILE=~/.config/fish/interactive.fish
-FISH_ALIAS_FILE=~/.config/fish/aliases.fish
+FISH_CONFIG_DIR=~/.config/fish
+FISH_CONFIG_FILE=$FISH_CONFIG_DIR/config.fish
+FISH_INTERACTIVE_FILE=$FISH_CONFIG_DIR/interactive.fish
+FISH_ALIAS_FILE=$FISH_CONFIG_DIR/aliases.fish
+
+mkdir -p $FISH_CONFIG_DIR
 
 insert () {
   if ! grep -qxF "$1" "$2"; then
