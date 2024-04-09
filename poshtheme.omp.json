@@ -100,6 +100,17 @@
           }
         },
         {
+          "type": "java",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#4063D8",
+          "template": "  {{ .Full }}",
+          "properties": {
+            "display_mode": "files"
+          }
+        },
+        {
           "type": "ruby",
           "style": "powerline",
           "powerline_symbol": "",
