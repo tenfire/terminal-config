@@ -51,5 +51,7 @@ if test -f ~/.bash_aliases
 end
 
 alias upgrade-oh-my-posh="curl -s https://ohmyposh.dev/install.sh | bash -s"
+
+#alias pass="EDITOR='code --wait' command pass"
 EOF
 insert "$ALIASES" "$FISH_ALIAS_FILE"
