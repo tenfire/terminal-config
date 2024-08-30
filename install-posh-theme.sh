@@ -4,7 +4,7 @@ BASHRC_FILE=~/.bashrc
 ZSHRC_FILE=~/.zshrc
 FISH_CONFIG_FILE=~/.config/fish/interactive.fish
 THEME_SRC=$(pwd)/poshtheme.omp.json
-THEME_DEST=~/poshtheme.omp.json
+THEME_DEST=~/.poshtheme.omp.json
 
 rm -f "$THEME_DEST"
 ln -s "$THEME_SRC" "$THEME_DEST"
