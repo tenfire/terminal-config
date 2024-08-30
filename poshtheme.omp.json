@@ -29,7 +29,6 @@
           "trailing_diamond": "",
           "template": " {{.Icon}} ",
           "properties": {
-            "macos": "mac"
           }
         },
         {
